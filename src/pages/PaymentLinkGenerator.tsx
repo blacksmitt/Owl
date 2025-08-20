@@ -103,7 +103,7 @@ const PaymentLinkGenerator: React.FC = () => {
 
             <button
               type="submit"
-              className="w-full px-6 py-4 bg-gradient-to-r from-teal-500 to-purple-600 text-white font-semibold rounded-xl hover:shadow-lg hover:shadow-purple-500/25 transition-all duration-300 transform hover:scale-105"
+              className="w-full px-6 py-4 bg-gradient-to-r from-blue-500 to-indigo-600 text-white font-semibold rounded-xl hover:shadow-lg hover:shadow-blue-500/25 transition-all duration-300 transform hover:scale-105"
             >
               Generate Payment Link
             </button>
@@ -149,7 +149,7 @@ const PaymentLinkGenerator: React.FC = () => {
                       href={generatedLink}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="px-4 py-3 bg-gradient-to-r from-teal-500 to-purple-600 text-white rounded-xl hover:shadow-lg transition-all duration-300 flex items-center space-x-2"
+                      className="px-4 py-3 bg-gradient-to-r from-blue-500 to-indigo-600 text-white rounded-xl hover:shadow-lg transition-all duration-300 flex items-center space-x-2"
                     >
                       <ExternalLink className="w-4 h-4" />
                       <span>View</span>
@@ -161,7 +161,7 @@ const PaymentLinkGenerator: React.FC = () => {
               {/* QR Code */}
               <div className="bg-slate-800/40 backdrop-blur-xl border border-slate-700/50 rounded-2xl p-6">
                 <div className="flex items-center space-x-2 mb-4">
-                  <QrCode className="w-5 h-5 text-teal-400" />
+                  <QrCode className="w-5 h-5 text-blue-400" />
                   <h3 className="text-lg font-bold text-white">QR Code</h3>
                 </div>
                 <QRCodeGenerator value={generatedLink} />

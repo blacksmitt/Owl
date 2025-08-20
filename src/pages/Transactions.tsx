@@ -146,6 +146,7 @@ const Transactions: React.FC = () => {
         </div>
         
         <button className="px-6 py-3 bg-gradient-to-r from-teal-500 to-purple-600 text-white font-semibold rounded-xl hover:shadow-lg hover:shadow-purple-500/25 transition-all duration-300 transform hover:scale-105 flex items-center space-x-2">
+        <button className="px-6 py-3 bg-gradient-to-r from-blue-500 to-indigo-600 text-white font-semibold rounded-xl hover:shadow-lg hover:shadow-blue-500/25 transition-all duration-300 transform hover:scale-105 flex items-center space-x-2">
           <Download className="w-5 h-5" />
           <span>Export CSV</span>
         </button>
@@ -193,6 +194,7 @@ const Transactions: React.FC = () => {
                 value={searchTerm}
                 onChange={(e) => setSearchTerm(e.target.value)}
                 className="w-full pl-10 pr-4 py-3 bg-slate-700 border border-slate-600 rounded-xl text-white placeholder-slate-400 focus:outline-none focus:border-teal-400 focus:bg-slate-600 transition-colors duration-200"
+                className="w-full pl-10 pr-4 py-3 bg-slate-700 border border-slate-600 rounded-xl text-white placeholder-slate-400 focus:outline-none focus:border-blue-400 focus:bg-slate-600 transition-colors duration-200"
               />
             </div>
           </div>
@@ -202,6 +204,7 @@ const Transactions: React.FC = () => {
               value={statusFilter}
               onChange={(e) => setStatusFilter(e.target.value)}
               className="px-4 py-3 bg-slate-700 border border-slate-600 rounded-xl text-white focus:outline-none focus:border-teal-400 focus:bg-slate-600 transition-colors duration-200"
+              className="px-4 py-3 bg-slate-700 border border-slate-600 rounded-xl text-white focus:outline-none focus:border-blue-400 focus:bg-slate-600 transition-colors duration-200"
             >
               <option value="All">All Status</option>
               <option value="Confirmed">Confirmed</option>
@@ -213,6 +216,7 @@ const Transactions: React.FC = () => {
               value={cryptoFilter}
               onChange={(e) => setCryptoFilter(e.target.value)}
               className="px-4 py-3 bg-slate-700 border border-slate-600 rounded-xl text-white focus:outline-none focus:border-teal-400 focus:bg-slate-600 transition-colors duration-200"
+              className="px-4 py-3 bg-slate-700 border border-slate-600 rounded-xl text-white focus:outline-none focus:border-blue-400 focus:bg-slate-600 transition-colors duration-200"
             >
               <option value="All">All Crypto</option>
               <option value="BTC">Bitcoin</option>
