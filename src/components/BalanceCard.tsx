@@ -16,7 +16,7 @@ const BalanceCard: React.FC = () => {
     <div className="p-6 bg-gradient-to-br from-slate-800/60 to-slate-900/60 backdrop-blur-xl border border-slate-700/50 rounded-2xl hover:shadow-xl hover:shadow-purple-500/10 transition-all duration-300">
       <div className="flex items-center justify-between mb-4">
         <div className="flex items-center space-x-2">
-          <Wallet className="w-6 h-6 text-blue-400" />
+          <Wallet className="w-6 h-6 text-teal-400" />
           <span className="text-slate-400 text-sm font-medium">Total Balance</span>
         </div>
         <button
